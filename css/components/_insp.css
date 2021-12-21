@@ -1,0 +1,236 @@
+.insp {
+    padding-top: 95px;
+    padding-bottom: 140px;
+}
+
+.insp_heading {
+    margin-bottom: 25px;
+}
+
+.insp_descr {
+    text-align: center;
+    max-width: 635px;
+    margin: 0 auto;
+    font-family: 'SFCompact', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #788692;
+    margin-bottom: 95px;
+}
+
+.grid {
+    display: grid;
+}
+
+.insp_list {
+    grid-gap: 32px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(500px, auto);
+}
+
+.insp_item {
+    display: flex;
+    position: relative;
+    border-radius: 8px;
+}
+
+.insp_item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 50%, rgba(0, 0, 0, 0.647277) 100%);
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.insp_item:hover::before {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/*
+.insp_item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 50%, rgba(0, 0, 0, 0.647277) 100%);
+    border-radius: 8px;
+}
+*/
+
+.insp_text {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 5;
+    opacity: 0;
+    padding: 0 40px;
+    padding-bottom: 47px;
+}
+
+.insp_item:hover .insp_text {
+    opacity: 1;
+    transition: opacity 0.7s ease-in-out;
+    display: block;
+}
+
+.insp_category {
+    font-size: 10px;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+    color: var(--white-color);
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.insp_title {
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--white-color);
+    margin-bottom: 25px;
+}
+
+.insp_play {
+    background-image: url("../../img/play.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    left: 40px;
+    top: 40px;
+}
+
+.insp_people {
+    display: flex;
+}
+
+.insp_people-item {
+    overflow: hidden;
+    border-radius: 100%;
+    width: 48px;
+    height: 48px;
+}
+
+.insp_people-item:not(:first-child) {
+    margin-left: -15px;
+}
+
+.insp_item-big {
+    grid-column-end: span 2;
+}
+
+.insp_item-bigheight {
+    height: 710px;
+}
+
+.insp_item-1 {
+    background-image: url("../../img/insp-1.jpg");
+}
+
+.insp_item-2 {
+    background-image: url("../../img/insp-2.jpg");
+}
+
+.insp_item-3 {
+    background-image: url("../../img/insp-3.jpg");
+}
+
+.insp_item-4 {
+    background-image: url("../../img/insp-4.jpg");
+}
+
+.insp_item-5 {
+    background-image: url("../../img/insp-5.jpg");
+}
+
+.insp_item-5::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: none;
+    background-color: #151c24;
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.insp_item-5:hover::before {
+    opacity: 0.8961;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.insp_item-6 {
+    background-image: url("../../img/insp-6.jpg");
+}
+
+.insp_item-7 {
+    background-image: url("../../img/insp-7.jpg");
+}
+
+.insp_text-5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    z-index: 5;
+    opacity: 0;
+}
+
+.insp_item-5:hover .insp_text-5 {
+    opacity: 1;
+    transition: opacity 0.7s ease-in-out;
+    display: flex;
+}
+
+.insp_category-5 {
+    font-family: SFProDisplay, sans-serif;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+    color: var(--white-color);
+    padding-bottom: 15px;
+}
+
+.insp_title-5 {
+    width: 320px;
+    font-family: Playfair, serif;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 40px;
+    text-align: center;
+    font-size: 32px;
+    color: var(--white-color);
+    padding-bottom: 166px;
+}
+
+.insp_people-5 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 47px;
+}
+
+.insp_people-item-5 {
+    overflow: hidden;
+    border-radius: 100%;
+    width: 48px;
+    height: 48px;
+}
+
+.insp_people-item-5:not(:first-child) {
+    margin-left: -15px;
+}
